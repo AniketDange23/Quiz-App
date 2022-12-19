@@ -9,7 +9,7 @@
     <script src="app.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="login">
         <div class="home">
             <img src="images.jpg" alt="">
           <h1>Hello User !</h1>
@@ -20,36 +20,36 @@
           <hr class="line">
           <h1>Select Category </h1>
           <div class="Category">
-          <button id="sub_1">math and science</button>
-          <button id="sub_2" >English and science</button><br>
-          <button id="sub_3">java and advanced</button>
-          <button id="sub_4">react and reason</button></div>
+          <button id="sub_1" onclick="showQuestionSet1();">math and science</button>
+          <button id="sub_2" onclick="showQuestionSet2();">English and science</button><br>
+          <button id="sub_3" onclick="showQuestionSet3();">java and advanced</button>
+          <button id="sub_4" onclick="showQuestionSet4();">react and reason</button></div>
         </div>
     </div>
     <!-- page-2 -->
-    <div class="container">
-        <div class="question">
-          <h1>Math And Probability</h1>
-          <div class="begin-countdown">
-              <div class="dot" style="position: center">
-                <h3 id="pageBeginCountdownText" class="clock">10</h3>
-              </div><p class="score" >Score: </p>
-            </div>
-            
-<p class="que-1">	
-  <span class="sr-no"> Que No.1</span>
-		<br>
+    <div class="container" id="que1" style="display: none;">
+      <div class="question">
+        <h1>Math And Probability</h1>
+        <div class="begin-countdown">
+          <div class="dot" style="position: center">
+            <h3 id="pageBeginCountdownText" class="clock">10</h3>
+          </div><p class="score" >Score: </p>
+        </div>
+          
+        <p class="que-1">	
+          <span class="sr-no"> Que No.1</span>
+        <br>
 A tank is filled by three pipes with uniform flow. The first two pipes operating simultaneously fill the tank in the same time during which the tank is filled by the third pipe alone. The second pipe fills the tank 5 hours faster than the first pipe and 4 hours slower than the third pipe. The time required by the first pipe is:
-         <div class="option">
+        <div class="option">
           <button>A. 6 hours.</button>
           <button>B. 10 hours.</button><br>
           <button>C. 15 hours.</button>
           <button>D. 30 hours.</button><br>
         </div>
         <button class="next-btn">Next Questions</button>
-        </div>
+      </div>
     </div>
-    <div class="container">
+    <div class="container" id="result" style="display: none;">
         <div class="quiz-result">
             <p>your result is:</p>
             <p>Total Time Take : seconds</p>

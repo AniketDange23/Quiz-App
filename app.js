@@ -1,7 +1,12 @@
-const   questionDiv = document.getElementById(question); 
-const   sub_1 = document.getElementById(sub_1); 
-const   sub_2 = document.getElementById(sub_2); 
-const   sub_3 = document.getElementById(sub_3); 
-const   sub_4 = document.getElementById(sub_4); 
+// const   questionDiv = document.getElementById(question); 
+// const   sub_1 = document.getElementById(sub_1); 
+// const   sub_2 = document.getElementById(sub_2); 
+// const   sub_3 = document.getElementById(sub_3); 
+// const   sub_4 = document.getElementById(sub_4); 
 
-question.style.visibility(hidden);
+// question.style.visibility(hidden);
+
+function showQuestionSet1(){
+    document.getElementById("login").style.display = 'none'; 
+    document.getElementById("que1").style.display = 'block'; 
+}
